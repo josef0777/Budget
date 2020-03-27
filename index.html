@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="variables.css">
+    <link rel="stylesheet" href="style2.css">
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="app">
+    <div class="title">
+        Obliczanie dziennego budżetu
+    </div>
+    <div class="main">
+        <div class="data">
+            <div class="choose-expenses">Wprowadź wymagane wydatki</div>
+            <input class="expenses-item" type="text" id="expenses_1" placeholder="Nazwa">
+			<input class="expenses-item" type="text" id="expenses_2" placeholder="Cena">
+			<input class="expenses-item" type="text" id="expenses_3" placeholder="Nazwa">
+			<input class="expenses-item" type="text" id="expenses_4" placeholder="Cena">
+            <button class="expenses-item-btn">Zatwierdź</button>
+            
+            <div class="optionalexpenses">Wprowadź opcjonalne wydatki</div>
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_1">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_2">
+			<input class="optionalexpenses-item" type="text" id="optionalexpenses_3">
+            <button class="optionalexpenses-btn">Zatwierdź</button>
+            
+            <div class="count-budget">Obliczanie dziennego budżetu</div>
+            <button class="count-budget-btn">Obliczyć</button>
+            
+            <div class="choose-income-label">Wprowadź pozycje dochodu oddzielone przecinkami</div>
+            <input class="choose-income" type="text" id="income">
+            
+            <div class="checksavings">Czy są jakieś oszczędności?: 
+                <input id="savings" type="checkbox" />
+            </div>
+            <label for="sum">Kwota</label>
+			<input class="choose-sum" id="sum" type="text">
+			<label for="percent">Procent</label>
+            <input class="choose-percent" id="percent" type="text">
+            
+            <div class="open">
+                <button class="start" id="start">Rozpocznij obliczenia</button>
+            </div>
+        </div>
+        <div class="result">
+            <div class="result-table">
+                <div class="budget">Dochód: </div>
+                <div class="budget-value"></div>
+    
+                <div class="daybudget">1-dniowy budżet: </div>
+                <div class="daybudget-value"></div>
+    
+                <div class="level">Poziom dochodów: </div>
+                <div class="level-value"></div>
+    
+                <div class="expenses">Obowiązkowe wydatki: </div>
+                <div class="expenses-value"></div>
+    
+                <div class="optionalexpenses">Możliwe wydatki: </div>
+                <div class="optionalexpenses-value"></div>
+    
+                <div class="income">Dodatkowe dochody: </div>
+                <div class="income-value"></div>
+    
+                <div class="monthsavings">Oszczędności w ciągu 1 miesiąca:</div>
+                <div class="monthsavings-value"></div>
+    
+                <div class="yearsavings">Oszczędności w ciągu 1 roku:</div>
+                <div class="yearsavings-value"></div>
+            </div>
+            <div class="time-data">
+                <div class="year">
+                    Rok
+                    <input class="year-value" type="text" readonly>
+                </div>
+                <div class="month">
+                    Miesiąc:
+                    <input class="month-value" type="text" readonly>
+                </div>
+                <div class="day">
+                    Dzień:
+                    <input class="day-value" type="text" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
